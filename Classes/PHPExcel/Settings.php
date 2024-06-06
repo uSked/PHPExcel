@@ -382,7 +382,7 @@ class PHPExcel_Settings
             self::$libXmlLoaderOptions = true;
         }
         if (version_compare(PHP_VERSION, '5.2.11') >= 0) {
-            @libxml_disable_entity_loader((bool) self::$libXmlLoaderOptions);
+            //@libxml_disable_entity_loader((bool) self::$libXmlLoaderOptions);
         }
         return self::$libXmlLoaderOptions;
     }
